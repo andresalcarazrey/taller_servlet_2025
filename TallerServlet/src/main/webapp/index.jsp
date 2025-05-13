@@ -5,6 +5,6 @@
 </head>
 <body>
     <h1>Bienvenido</h1>
-    <a href="clientes">Ver lista de clientes</a>
+    <p>Aquí pondríamos el punto de partida de nuestra web app. El html necesario, css y js para acceder a los datos del taller</p>
 </body>
 </html>
