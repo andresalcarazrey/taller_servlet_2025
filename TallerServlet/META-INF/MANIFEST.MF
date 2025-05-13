@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: 
+Class-Path: protobuf-java-3.21.9.jar annotations-26.0.2.jar mysql-connec
+ tor-j-8.0.33.jar
+
