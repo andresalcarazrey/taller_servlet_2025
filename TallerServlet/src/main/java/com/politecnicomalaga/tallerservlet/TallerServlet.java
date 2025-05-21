@@ -31,7 +31,14 @@ public class TallerServlet extends HttpServlet {
         {
             response.setContentType("text/json");
             PrintWriter out = response.getWriter();
+
             String tipoConsulta = request.getParameter("peticion");
+            if (tipoConsulta == null) {  //no nos han puesto el parámetro peticion en la URL
+                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                out.println("{\"error\":\"Falta parámetro 'peticion'\"}");
+                return;
+            }
+
 
 
             Map<String,String> data = new HashMap<>();
@@ -41,6 +48,8 @@ public class TallerServlet extends HttpServlet {
             data.put("dni",request.getParameter("dni"));
             data.put("email",request.getParameter("email"));
             data.put("telefono",request.getParameter("telefono"));
+
+            //Se podría (debería) de comprobar que están todos los campos, antes de haber creado el Mapa. Es un MUST do
 
 
             switch (tipoConsulta) {
