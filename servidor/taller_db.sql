@@ -1,6 +1,16 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 
+-- Crear usuario si no existe
+CREATE USER IF NOT EXISTS 'taller'@'%' IDENTIFIED BY '2secret2know';
+
+-- Otorgar permisos sobre la base de datos
+GRANT SELECT, INSERT, UPDATE, DELETE ON taller_db.* TO 'taller'@'%';
+
+-- Asegurar que los privilegios se recarguen
+FLUSH PRIVILEGES;
+
+CREATE DATABASE IF NOT EXISTS taller_db;
 USE taller_db;
 
 DROP TABLE IF EXISTS TrabajoTaller;
@@ -43,10 +53,12 @@ CREATE TABLE `Mecanicos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
+
 INSERT INTO `Mecanicos` (`dni`, `nombre`, `apellido1`, `apellido2`, `telefono`, `email`, `fecha_ant`) VALUES
-('99887766Z', 'Pedro', 'Sabelo', 'Quehace', '0034645455455', 'pedritosabio@gmail.com', '12/01/2000'),
-('88776655J', 'Luisa', 'Pintalo', 'Bonito', '0034656765678', 'pintaycoloreaLuisi@gmail.com','23/10/2009'),
-('77665544M', 'Adrian', 'Rompe', 'Motos', '0034676222679', 'rmotos_adri@gmail.com','18/05/2012');
+('99887766Z', 'Pedro', 'Sabelo', 'Quehace', '0034645455455', 'pedritosabio@gmail.com', '2000-01-12'),
+('88776655J', 'Luisa', 'Pintalo', 'Bonito', '0034656765678', 'pintaycoloreaLuisi@gmail.com', '2009-10-23'),
+('77665544M', 'Adrian', 'Rompe', 'Motos', '0034676222679', 'rmotos_adri@gmail.com', '2012-05-18');
+
 
 
 ALTER TABLE `Mecanicos`
