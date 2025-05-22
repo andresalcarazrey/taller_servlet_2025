@@ -28,10 +28,10 @@ CREATE TABLE `Clientes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `Clientes` (`dni`, `nombre`, `apellido1`, `apellido2`, `telefono`, `email`) VALUES
-('11223344A', 'Juan', 'Silo', 'Senovengo', '0034676767671', 'jsilose@gmail.com'),
-('22334455B', 'Eva', 'Correve', 'Ydile', '0034676767672', 'correveydile@gmail.com'),
-('33445566C', 'Araceli', 'Callay', 'Come', '0034676767673', 'aracallay@gmail.com'),
-('44556677D', 'Teodoro', 'Teda', 'Buenastardes', '0034676767674', 'teoteda@gmail.com');
+('11223344A', 'Juan', 'Silo', 'Senovengo', '676767671', 'jsilose@gmail.com'),
+('22334455B', 'Eva', 'Correve', 'Ydile', '676767672', 'correveydile@gmail.com'),
+('33445566C', 'Araceli', 'Callay', 'Come', '676767673', 'aracallay@gmail.com'),
+('44556677D', 'Teodoro', 'Teda', 'Buenastardes', '676767674', 'teoteda@gmail.com');
 
 
 ALTER TABLE `Clientes`
@@ -55,9 +55,9 @@ CREATE TABLE `Mecanicos` (
 
 
 INSERT INTO `Mecanicos` (`dni`, `nombre`, `apellido1`, `apellido2`, `telefono`, `email`, `fecha_ant`) VALUES
-('99887766Z', 'Pedro', 'Sabelo', 'Quehace', '0034645455455', 'pedritosabio@gmail.com', '2000-01-12'),
-('88776655J', 'Luisa', 'Pintalo', 'Bonito', '0034656765678', 'pintaycoloreaLuisi@gmail.com', '2009-10-23'),
-('77665544M', 'Adrian', 'Rompe', 'Motos', '0034676222679', 'rmotos_adri@gmail.com', '2012-05-18');
+('99887766Z', 'Pedro', 'Sabelo', 'Quehace', '645455455', 'pedritosabio@gmail.com', '2000-01-12'),
+('88776655J', 'Luisa', 'Pintalo', 'Bonito', '656765678', 'pintaycoloreaLuisi@gmail.com', '2009-10-23'),
+('77665544M', 'Adrian', 'Rompe', 'Motos', '676222679', 'rmotos_adri@gmail.com', '2012-05-18');
 
 
 
