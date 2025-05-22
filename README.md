@@ -11,44 +11,45 @@ el crud de Clientes (falta el borrado de un cliente o la modificación mediante 
 El proyecto sigue una estructura estándar de Maven para aplicaciones web:
 
 mi-proyecto-webapp/
+
 ├── src/
-
+│
 │   ├── main/
-
+│
 │   │   ├── java/
-
+│
 │   │   │   └── com/
-
+│
 │   │   │       └── politecnicomalaga/
-
+│
 │   │   │           └── tallerservlet/
-
+│
 │   │   │               ├── TallerServlet.java
-
+│
 │   │   │               ├── data/
-
+│
 │   │   │               │   ├── BBDDController.java
-
+│
 │   │   │               │   └── RepositorioClientes.java
-
+│
 │   │   │               └── model/
-
+│
 │   │   │                   └── Cliente.java
-
+│
 │   │   ├── resources/
-
+│
 │   │   └── webapp/
-
+│
 │   │       ├── WEB-INF/
-
+│
 │   │       │   └── web.xml
-
+│
 │   │       └── index.jsp
-
+│
 │   └── test/
-
+│
 │       └── java/
-
+│
 └── pom.xml
 
 
